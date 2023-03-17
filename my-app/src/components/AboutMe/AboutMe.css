@@ -1,0 +1,100 @@
+.AboutMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  height: 100%;
+  border-radius: 5px;
+
+  padding: 10px;
+  z-index: 2;
+}
+
+.AboutMe .AboutMe-contact {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+
+  width: 400px;
+  height: 240px;
+  gap: 30px;
+
+  /* border: 10px solid var(--second-bg-color);
+  border-right: 0 solid var(--second-bg-color);
+  border-bottom: 0px;
+  border-top: 8px solid var(--second-bg-color);
+
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px; */
+
+  /* background-color: #ffffff; */
+}
+
+.Name {
+  font-size: 2rem;
+  color: white;
+}
+
+.Name h3 {
+  color: var(--third-bg-color);
+  font-size: smaller;
+}
+
+.contact-detail {
+  display: flex;
+  font-size: 0.7rem;
+}
+
+.contact-detail div {
+  flex: 1;
+}
+
+.contact-detail .blank {
+  flex: 1;
+}
+
+.my-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: var(--second-bg-color);
+}
+
+@media screen and (max-width: 500px) {
+  .AboutMe-contact {
+    margin-top: 100px;
+    width: 250px;
+    gap: 0px;
+  }
+  .contact {
+    gap: 0px;
+  }
+
+  .Name {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 745px) {
+  .AboutMe-contact {
+    margin-top: 100px;
+  }
+  .contact {
+    gap: 0px;
+    height: auto;
+  }
+
+  .blank {
+    display: none;
+  }
+}
