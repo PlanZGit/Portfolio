@@ -2,6 +2,7 @@
   --main-bg-color: rgb(255, 255, 255);
   --second-bg-color: #ffae01;
   --third-bg-color: #eab359;
+  --forth-bg-color: #ffffff;
 }
 
 body {
@@ -12,8 +13,9 @@ body {
   -webkit-font-smoothing: antialiased;
   /* -moz-osx-font-smoothing: grayscale; */
   text-align: center;
-  background-color: var(--main-bg-color);
+  background-color: var(--forth-bg-color);
   color: white;
+  background-image: url("https://images.hdqwalls.com/download/3d-cube-grids-stack-light-background-qg-1360x768.jpg");
 }
 
 code {

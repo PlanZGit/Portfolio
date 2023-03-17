@@ -1,18 +1,19 @@
-.AboutMe {
+.about-me {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-
-  height: 100%;
-  border-radius: 5px;
-
-  padding: 10px;
   z-index: 2;
 }
-
-.AboutMe .AboutMe-contact {
+.backgroundIMG {
+  position: absolute;
+  left: 0;
+  top: 20vh;
+  object-fit: cover;
+  width: 100%;
+  height: 50%;
+}
+.AboutMe-contact {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -63,7 +64,7 @@
   flex: 1;
 }
 
-.my-img {
+.my-picture {
   width: 250px;
   height: 250px;
   border-radius: 50%;

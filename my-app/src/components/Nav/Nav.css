@@ -1,0 +1,41 @@
+.Nav {
+  z-index: 5;
+  position: fixed;
+  left: 10px;
+  top: 60px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Nav button {
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  width: 130px;
+  height: 45px;
+
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.295);
+
+  transition: 0.2s;
+}
+
+@media screen and (max-width: 500px) {
+  .Nav button {
+    width: 100px;
+    height: 40px;
+  }
+}
+
+.Nav button:hover {
+  transform: translateX(10px);
+  /* width: 20vmin; */
+  transition: 0.2s;
+}
+
+.Nav button:active {
+  border-top: 5px solid var(--second-bg-color);
+}

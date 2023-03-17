@@ -1,20 +1,31 @@
 .Plain {
+  margin: 32px;
+  height: 90vh;
+  /* overflow-y: scroll; */
+
+  box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.164);
+  background-color: var(--forth-bg-color);
+}
+
+.section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 
-  margin: 32px;
+  flex-wrap: wrap;
+  /* border: 2px solid black; */
   height: 90vh;
+  background-size: cover;
+  scroll-snap-align: start;
   position: relative;
-  overflow-y: scroll;
-  box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.164);
-  background: white;
 }
 
-.backgroundIMG {
-  position: absolute;
-  object-fit: cover;
-  width: 100%;
-  height: 50%;
-  z-index: 1;
+.container {
+  position: relative;
+  /* width: 100%; */
+  height: 90vh;
+  scroll-behavior: smooth;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
 }
