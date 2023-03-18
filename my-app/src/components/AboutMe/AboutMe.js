@@ -3,7 +3,7 @@ import "./AboutMe.css";
 
 const AboutMe = () => {
   return (
-    <section className="section">
+    <section className="section" id="AboutMe">
       <img
         alt="backgroundIMG"
         src="https://img.freepik.com/premium-photo/close-up-computer-rgb-gaming-keyboard-illuminated-by-colored-led_75775-619.jpg"

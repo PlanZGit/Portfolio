@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Nav.css";
 const Nav = () => {
   return (
     <nav className="Nav">
-      <button>About Me</button>
-      <button>My Work</button>
-      <button>. . .</button>
+      <a href="#AboutMe">About Me</a>
+      <a href="#MyWork">My Work</a>
+      <a></a>
     </nav>
   );
 };

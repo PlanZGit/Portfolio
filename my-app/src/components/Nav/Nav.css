@@ -9,7 +9,17 @@
   gap: 10px;
 }
 
-.Nav button {
+.Nav a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  text-align: start;
+  padding-bottom: 5px;
+  padding-left: 20px;
+
+  text-decoration-line: none;
+
   color: black;
   font-size: 1rem;
   font-weight: bold;
@@ -23,19 +33,38 @@
   transition: 0.2s;
 }
 
-@media screen and (max-width: 500px) {
-  .Nav button {
-    width: 100px;
-    height: 40px;
-  }
-}
-
-.Nav button:hover {
+.Nav a:hover {
   transform: translateX(10px);
   /* width: 20vmin; */
   transition: 0.2s;
 }
 
-.Nav button:active {
+.Nav a::before {
+  content: "";
+  margin-top: 10px;
+  width: 25%;
+  height: 10%;
+  border-radius: 10px;
+  background-color: var(--second-bg-color);
+  display: block;
+  transition: 0.5s;
+}
+
+.Nav a:hover::before {
+  width: 85%;
+  transition: 0.5s;
+}
+
+.Nav a:active {
   border-top: 5px solid var(--second-bg-color);
+}
+
+@media screen and (max-width: 500px) {
+  .Nav {
+    top: 40px;
+  }
+  .Nav a {
+    width: 105px;
+    height: 40px;
+  }
 }
