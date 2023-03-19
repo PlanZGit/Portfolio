@@ -26,8 +26,8 @@ const scrollObserve = () => {
   // console.log(sectionA);
   let options = {
     root: null, //defalut is the viewport
-    threshold: 1, //default is 0 , 0-1
-    rootMargin: "0px",
+    threshold: 0, //default is 0 , 0-1
+    rootMargin: "-100px",
   };
 
   const observer = new IntersectionObserver(function (entries, observer) {
@@ -38,7 +38,9 @@ const scrollObserve = () => {
 
       let checkbox = document.getElementById("checkbox-" + entry.target.id);
       checkbox.checked = false;
-      // console.log(checkbox);
+
+      let title = document.getElementById("title-" + entry.target.id);
+      title.style.animation = "none";
 
       //Set nav className
       if (entry.isIntersecting) {
@@ -47,6 +49,9 @@ const scrollObserve = () => {
 
         let checkbox = document.getElementById("checkbox-" + entry.target.id);
         checkbox.checked = true;
+
+        let title = document.getElementById("title-" + entry.target.id);
+        title.style.animation = "fade-in .5s 1";
       }
 
       // Runs once, usefully for lazy loading images.
@@ -55,13 +60,7 @@ const scrollObserve = () => {
   }, options);
 
   sections.forEach((section, index) => {
-    // const sectionChildren = [
-    //   ...section.querySelector("[data-content]").children,
-    // ];
-
-    // sectionChildren.forEach((el, index) => {
-    //   el.style.setProperty("--delay", `${index * 250}ms`);
-    // });
+    // console.log(section.childElementCount);
 
     observer.observe(section);
   });

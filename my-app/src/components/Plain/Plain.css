@@ -19,6 +19,7 @@
   background-size: cover;
   scroll-snap-align: start;
   position: relative;
+  transition: transform 1s, opacity 1s;
 }
 
 .container {

@@ -11,7 +11,7 @@
 a {
   /* background-color: var(--forth-bg-color); */
   background-color: var(--main-bg-color);
-  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.295);
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.226);
 }
 .Nav a {
   display: flex;
@@ -35,8 +35,10 @@ a {
 }
 
 .Nav a:hover {
-  transform: translateX(10px);
-  transition: 0.2s;
+  /* transform: translateX(10px); */
+  box-shadow: 0px 0px 3px 3px var(--second-bg-color);
+
+  transition: 0.15s;
 }
 
 input[type="checkbox"] {
@@ -61,7 +63,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked + .slider::before {
-  width: 70%;
+  width: 75%;
   transition: 0.5s;
 }
 
