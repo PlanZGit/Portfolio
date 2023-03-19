@@ -32,12 +32,24 @@ const scrollObserve = () => {
 
   const observer = new IntersectionObserver(function (entries, observer) {
     entries.forEach((entry) => {
-      if (!entry.isIntersecting) {
-        return;
-      }
-      console.log(entry.target, " Do something....");
+      //Clear nav class
+      let navLink = document.getElementById("nav-" + entry.target.id);
+      navLink.className = "";
 
-      //Runs once, usefully for lazy loading images.
+      let checkbox = document.getElementById("checkbox-" + entry.target.id);
+      checkbox.checked = false;
+      // console.log(checkbox);
+
+      //Set nav className
+      if (entry.isIntersecting) {
+        let active = document.getElementById("nav-" + entry.target.id);
+        active.className = "active-nav";
+
+        let checkbox = document.getElementById("checkbox-" + entry.target.id);
+        checkbox.checked = true;
+      }
+
+      // Runs once, usefully for lazy loading images.
       // observer.unobserve(entry.target);
     });
   }, options);

@@ -8,12 +8,16 @@
   flex-direction: column;
   gap: 10px;
 }
-
+a {
+  /* background-color: var(--forth-bg-color); */
+  background-color: var(--main-bg-color);
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.295);
+}
 .Nav a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: start;
+  align-items: flex-start;
   text-align: start;
   padding-bottom: 5px;
   padding-left: 20px;
@@ -24,39 +28,46 @@
   font-size: 1rem;
   font-weight: bold;
   border: none;
-  background-color: rgb(255, 255, 255);
   width: 130px;
   height: 45px;
-
-  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.295);
 
   transition: 0.2s;
 }
 
 .Nav a:hover {
   transform: translateX(10px);
-  /* width: 20vmin; */
   transition: 0.2s;
 }
 
-.Nav a::before {
+input[type="checkbox"] {
+  opacity: 0;
+  /* z-index: 2; */
+}
+
+.slider {
+  position: absolute;
+  width: 100%;
+}
+
+.slider::before {
   content: "";
   margin-top: 10px;
   width: 25%;
-  height: 10%;
+  height: 5px;
   border-radius: 10px;
   background-color: var(--second-bg-color);
   display: block;
   transition: 0.5s;
 }
 
-.Nav a:hover::before {
-  width: 85%;
+input[type="checkbox"]:checked + .slider::before {
+  width: 70%;
   transition: 0.5s;
 }
 
-.Nav a:active {
-  border-top: 5px solid var(--second-bg-color);
+.active-nav {
+  transform: translateX(10px);
+  background-color: var(--main-bg-color);
 }
 
 @media screen and (max-width: 500px) {
