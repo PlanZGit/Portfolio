@@ -95,6 +95,7 @@
 
   cursor: pointer;
   box-shadow: 0px 0px 1px 1px var(--forth-bg-color);
+  transition: 0.15s;
 }
 .bg-circle img {
   position: absolute;
@@ -106,10 +107,10 @@
   height: 80%;
 }
 .tool-tip {
-  color: black;
-  background-color: var(--main-bg-color);
-  border-radius: 5px;
-  padding: 5px;
+  color: rgb(255, 255, 255);
+  /* background-color: var(--second-bg-color); */
+  border-radius: 2px;
+  padding: 3px;
   font-size: 1.5rem;
 
   position: absolute;
@@ -119,16 +120,20 @@
 
   z-index: 2;
   opacity: 0;
+
+  font-weight: bold;
   transition: 0.15s;
 
   pointer-events: none;
 }
 .bg-circle:hover {
-  box-shadow: 0px 0px 3px 3px var(--second-bg-color);
+  box-shadow: 0px 6px 22px 0px var(--forth-bg-color);
+  transform: translate3d(0, 0, 2rem) scale(1.1);
+  z-index: 3;
   transition: 0.15s;
 }
 .bg-circle:hover .tool-tip {
-  opacity: 0.7;
+  opacity: 1;
   transition: 0.15s;
 }
 

@@ -14,12 +14,12 @@
   align-items: center;
 
   flex-wrap: wrap;
-  /* border: 2px solid black; */
+  /* border: 2px solid rgb(255, 0, 0); */
   height: 90vh;
   background-size: cover;
   scroll-snap-align: start;
   position: relative;
-  transition: transform 1s, opacity 1s;
+  transition: transform 0.5s, opacity 0.5s;
 }
 
 .container {
