@@ -16,7 +16,7 @@ const MyWork = () => {
         <div className="project-flex-box">
           <a
             rel="noreferrer"
-            href="https://planzgit.github.io/MovieReview"
+            href="https://planzgit.github.io/MovieRating"
             target="_blank">
             <img
               className="project-image"
