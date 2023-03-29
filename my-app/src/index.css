@@ -29,3 +29,8 @@ h2,
 h3 {
   margin: 0;
 }
+
+svg {
+  width: 2rem;
+  height: 2rem;
+}
