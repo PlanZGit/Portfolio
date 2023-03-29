@@ -13,9 +13,18 @@ const MyWork = () => {
         className="work-bg"></img>
 
       <div className="container-flex-box">
-        <div className="project-flex-box">ProjectX</div>
-        <div className="project-flex-box">ProjectY</div>
-        <div className="project-flex-box">ProjectZ</div>
+        <div className="project-flex-box">
+          <a
+            rel="noreferrer"
+            href="https://planzgit.github.io/MovieReview"
+            target="_blank">
+            <img
+              className="project-image"
+              alt="movieRating"
+              src="https://raw.githubusercontent.com/PlanZGit/MovieReview/main/Preview.png"></img>
+            <span className="movie-tool-tip">Movie Rating</span>
+          </a>
+        </div>
       </div>
     </section>
   );
