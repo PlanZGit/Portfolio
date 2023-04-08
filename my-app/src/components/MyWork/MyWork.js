@@ -20,9 +20,21 @@ const MyWork = () => {
             target="_blank">
             <img
               className="project-image"
-              alt="movieRating"
+              alt="projectA"
               src="https://raw.githubusercontent.com/PlanZGit/MovieReview/main/Preview.png"></img>
-            <span className="movie-tool-tip">Movie Rating</span>
+            <span className="tool-tip">Movie Rating</span>
+          </a>
+        </div>
+        <div className="project-flex-box">
+          <a
+            rel="noreferrer"
+            href="https://planzgit.github.io/ArtWebPage"
+            target="_blank">
+            <img
+              className="project-image"
+              alt="projectB"
+              src="https://user-images.githubusercontent.com/115049910/212942546-83b71f21-7aa0-4747-b55f-59b4fd53c286.jpg"></img>
+            <span className="tool-tip">Art Galleries</span>
           </a>
         </div>
       </div>

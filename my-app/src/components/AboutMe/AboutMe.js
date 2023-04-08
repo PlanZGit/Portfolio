@@ -17,8 +17,8 @@ const AboutMe = () => {
             <div className="title" id="title-AboutMe">
               <h1>Vang Xiong</h1>
               <p>
-                Hello there. I am a self taught front end developer since in
-                2022. I love cats, technology, fishing, and coding. These are my
+                Hello there. I am a self taught front end developer since 2022.
+                I love cats, technology, fishing, and coding. These are my
                 projects, these are my skill sets, email me.
               </p>
             </div>
